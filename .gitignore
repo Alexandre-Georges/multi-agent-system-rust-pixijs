@@ -1,0 +1,8 @@
+dist/*
+!dist/favicon.ico
+!dist/index.html
+!dist/pure-min.css
+!dist/styles.css
+node_modules
+pkg
+target

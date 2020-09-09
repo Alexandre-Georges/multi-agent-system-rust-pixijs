@@ -1,0 +1,27 @@
+[package]
+name = "multi_agent_system"
+version = "0.1.0"
+authors = ["Alexandre Georges <alexandre.georges.pro@gmail.com>"]
+edition = "2018"
+description = "Game of Life with PixiJS"
+repository = "https://github.com/Alexandre-Georges/multi-agent-system-rust-pixijs.git"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.67"
+random = "0.12.2"
+
+[dependencies.web-sys]
+version = "0.3.44"
+features = [
+  'CanvasRenderingContext2d',
+  'Document',
+  'HtmlCanvasElement',
+  'Window',
+]
+
+[dependencies.js-sys]
+version = "0.3.44"
